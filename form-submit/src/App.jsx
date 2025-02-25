@@ -1,5 +1,7 @@
 
 import './App.css'
+// import FormSubmit from './Components/FormSubmit/FormSubmit'
+import StateForm from './Components/StateForm/StateForm'
 
 function App() {
 
@@ -7,7 +9,9 @@ function App() {
   return (
     <>
     
-      <h1>Vite + React</h1>
+      {/* <FormSubmit></FormSubmit> */}
+      <StateForm></StateForm>
+   
       
       
     </>
