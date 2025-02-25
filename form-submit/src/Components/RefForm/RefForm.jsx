@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+
 
 
 const RefForm = () => {
@@ -9,6 +9,10 @@ const RefForm = () => {
     const passwordRef= useRef(null);
 
     const [error, setError]=useState('');
+
+    useEffect(()=>{
+        nameRef.current.focus();
+    },[])
 
     const handleFormSubmit=e=>{
         e.preventDefault();
